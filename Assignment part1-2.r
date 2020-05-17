@@ -1,0 +1,17 @@
+
+download.file("https://raw.githubusercontent.com/markziemann/SLE712_files/master/bioinfo_asst3_part1_files/gene_expression.tsv",
+destfile= "gene_expression.tsv") 
+read.table ("gene_expression.tsv",header = TRUE,row.names = 1, stringsAsFactors = FALSE )
+head(read.table("gene_expression.tsv"))
+x<-read.table("gene_expression.tsv")
+typeof(x)
+str(x)
+x<-read.table("gene_expresion.tsv",header=T)
+str(x)
+x<-read.table("gene_expression.tsv",header=T,row.names=1)
+head(x)
+str(x)
+x<-read.table("gene_expression.tsv",header=T,stringsAsFactors=F,sep="\t")
+str(x)
+x<-read.csv("gene_expression.tsv",sep="\t")
+str(x)              
